@@ -53,10 +53,7 @@ function getValue(){
 //   }else{
 //   }
 
-  let arrayKanapLinea = JSON.stringify(arrayKanap);
-  window.localStorage.setItem("arrayCartLinea", arrayKanap);
 console.log(localStorage);
-
 
 
 };
