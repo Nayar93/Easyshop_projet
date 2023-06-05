@@ -38,15 +38,13 @@ displayProduct()
 
 function getValue(){
 
-    var button = document.getElementById("addToCart").value;
+    // var button = document.getElementById("addToCart").value;
 
   const color = document.getElementById("colors").value;
-  const quantity = document.getElementById("quantity").value;
-  const price = document.getElementById("price").value;
-
-  console.log(id, color, price, quantity);
-
-  const arrayKanap = [id, color, quantity, price];
+  const quantitys = document.getElementById("quantity").value;
+  const prices = document.getElementById("price").value;
+  
+  const arrayKanap = [id, quantitys, color, prices];
   console.table(arrayKanap);
 
   // //   arrayKanap = localStorage.getItem("arrayKanap");
@@ -55,9 +53,10 @@ function getValue(){
 //   window.localStorage.setItem("arrayKanapLinea", arrayKanap);
 // console.log(localStorage);
 
+///////////////////////////////Condition////////////////////////////////////////
 
-//   arrayKanap = localStorage.getItem("arrayKanap");
-//   if(arraykanap === null){
+//   if(arrayCart === null){
+//   cardKanap.push('recupColor', 'recupQuantity', 'recupPrice');
 //   }else{
 //     let cardKanapLinea = JSON.stringify(cardKanap);
 //     window.localStorage.setItem("arrayCartLinea", cardKanap);
@@ -81,6 +80,7 @@ else {
     localStorage.setItem ("arKanap", jsonParseKanap);
 }
 console.log(localStorage);
+JSON.stringify(getValue)
 // localStorage.clear();
 
 }

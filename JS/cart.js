@@ -1,52 +1,64 @@
-// fetch('http://localhost:3000/api/products') 
+var data = sessionStorage.getItem('arrayKanap');
+
+  fetch('http://localhost:3000/api/products')
 
 
-// .then((response) => response.json())
 
-// .then(function(data) {
+//     .then(res => res.json())
+    
+//     .then(function (info) {
+//     console.log(info);
+//     for (let i = 0; i < info.length; i++){
 
-// for (let i = 0; i < data.length; i++)
-//     document.querySelector(".cart__items").innerHTML +=
-//     ` <article class="cart__item" data-id="{product-ID}" data-color="{product-color}">
-//     <div class="cart__item__img">
-//       <img src="${data[i].imageUrl}" alt="Photographie d'un canapé">
-//     </div>
-//     <div class="cart__item__content">
-//       <div class="cart__item__content__description">
-//         <h2>${data[i].name}</h2>
-//         <p>${data[i].color}</p>
-//         <p>${data[i].price}</p>
-//       </div>
-//       <div class="cart__item__content__settings">
-//         <div class="cart__item__content__settings__quantity">
-//           <p></p>
-//           <input type="number" class="itemQuantity" name="itemQuantity" min="1" max="100" value="42">
-//         </div>
-//         <div class="cart__item__content__settings__delete">
-//           <p class="deleteItem">${data[i].pop}</p>
-//         </div>
-//       </div>
-//     </div>
-//     </article>`
+//   document.querySelector( ".item__img" ).innerHTML +=
+//     `<img src="${achat.imageUrl}" alt="${achat.altTxt}">`;
 
+//     document.getElementById( "title" ).innerHTML +=
+//     `${achat.name}`;
 
-//             .catch(console.log(err))
-//     })
+//     document.getElementById( "price" ).innerHTML +=
+//     `${achat.price}`;
 
+//     document.getElementById( "description" ).innerHTML +=
+//     `${achat.description}`;
 
-// .thena(response)
+//     for( color of achat.colors ){
+//         document.getElementById( "colors" ).innerHTML +=
+//     `<option value="${color}">${color}</option>`;
+//     };}
+// });
+// // let params = new URLSearchParams(document.location.search);
+// // let id = params.get("id");
+// //         fetch('http://localhost:3000/api/products/'+id)
+        
+// //         .then(res => res.json())
+        
+// //         .then(function (achat) {
+// //         (console.log(achat));
+        
+// //         document.getElementById( "totalPrice" ).innerHTML +=
+// //     `${achat.price}`;
 
-// .then(data)
+// //     document.getElementById( "totalQuantity" ).innerHTML +=
+// //     `${achat.quantity}`;
 
-// for (let i = 0; i < data.length; i++) {
-//   `<a href="./product.html?id=42">
-//   <article>
-//     <img src="${info[i].imageUrl}">
-//     <h3 class="productName">${info[i].name}</h3>
-//     <p class="productDescription">${info[i].description}</p>
-//   </article>
-//   </a>`
+// //     document.getElementById( "firstNameErrorMsg" ).innerHTML +=
+// //     `${achat.description}`;
+    
+    
+// //         })
+    
+//         .catch(error => console.error(error));
 
-
-//             .catch(console.log(err))
-//     };
+//         if (arKanap === null) {
+//             let getKanap = [id, quantitys, color, prices];
+//             let jsonKanap = JSON.stringify(getKanap);
+//             window.localStorage.setItem ("arKanap", jsonKanap);
+//         }
+//         else {
+//             let parseKanap = JSON.parse(arKanap);
+//             parseKanap.push(id, quantitys, color, prices);
+//             let jsonParseKanap = JSON.stringify(parseKanap);
+//             localStorage.setItem ("arKanap", jsonParseKanap);
+//         }
+//         console.log(localStorage);
